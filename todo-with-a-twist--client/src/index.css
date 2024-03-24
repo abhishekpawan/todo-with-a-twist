@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: #ffffff;
+  line-height: 1.6;
+  font-size: 1.6rem;
+  color: #000000;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+h5 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+h6 {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Paragraphs */
+p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+/* Lists */
+ul, ol {
+  margin-bottom: 16px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.btn-primary {
+  display: inline-block;
+  width: fit-content;
+  padding: 10px 10px 5px 10px;
+  color: #383838;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #383838;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+.btn-primary.active, .btn-primary:hover {
+  color: #24A19C;
+  border-bottom: 2px solid #24A19C;
+}
+
+.login__header {
+  padding: 20px 40px;
+  text-align: center;
+}
+.login__btn-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 20px;
+}
+
+/*# sourceMappingURL=index.css.map */
