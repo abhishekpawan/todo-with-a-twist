@@ -6,7 +6,7 @@ const Login = () => {
       <div className="login__header">
         <h1>Todo With a Twist</h1>
         <div className="login__btn-group">
-          <Button text="Login" isActive={false} onClick={() => {}} />
+          <Button text="Login" isActive={true} onClick={() => {}} />
           <Button text="signup" isActive={false} onClick={() => {}} />
         </div>
       </div>

@@ -4,6 +4,9 @@
 *::before {
   margin: 0;
   padding: 0;
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
 html {
@@ -12,9 +15,6 @@ html {
 
 body {
   box-sizing: border-box;
-  font-family: "Raleway", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
   background-color: #ffffff;
   line-height: 1.6;
   font-size: 1.6rem;
@@ -95,7 +95,7 @@ a:hover {
   text-decoration: none;
   transition: background-color 0.3s ease;
   font-weight: bold;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
 .btn-primary.active, .btn-primary:hover {
   color: #24A19C;

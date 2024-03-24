@@ -5,6 +5,9 @@
 *::before {
   margin: 0;
   padding: 0;
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 html {
   font-size: 62.5%;
@@ -12,9 +15,6 @@ html {
 
 body {
   box-sizing: border-box;
-  font-family: "Raleway", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
   background-color: $color-white;
   line-height: 1.6;
   font-size: 1.6rem;
