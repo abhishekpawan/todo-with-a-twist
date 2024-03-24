@@ -1,0 +1,15 @@
+$media-query: (
+  "mobile": (max-width: 767px),
+  "tablet": (min-width: 768px) and (max-width: 1024px),
+  "desktop": (min-width: 1025px),
+);
+
+@mixin media-query($name) {
+  @if map-has-key($media-query, $name) {
+  @media screen and #{inspect(map-get($media-query, $name))} {
+    @content;
+  }
+} @else {
+  @warn "Couldn't find a breakpoint named `#{$name}`.";
+}
+}
