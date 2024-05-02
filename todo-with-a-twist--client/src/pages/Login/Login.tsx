@@ -31,13 +31,13 @@ const Login = () => {
             type="underline"
             text="Login"
             isActive={isLoginState}
-            onClick={() => setIsLoginState(!isLoginState)}
+            onClick={() => setIsLoginState(true)}
           />
           <Button
             type="underline"
             text="signup"
             isActive={!isLoginState}
-            onClick={() => setIsLoginState(!isLoginState)}
+            onClick={() => setIsLoginState(false)}
           />
         </div>
         <h3 className="login__title">Log in to your Account</h3>
