@@ -1,6 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import Button from "./components/Button/Button";
-import Login from "./pages/Login";
+import Login from "./pages/Login/Login";
+import Home from "./pages/Home/Home";
 
 function App() {
   return (
@@ -9,11 +10,12 @@ function App() {
         <Route
           path="button"
           element={
-            <Button text="Click here" isActive={false} onClick={() => {}} />
+            <Button type='underline' text="Click here" isActive={false} onClick={() => {}} />
           }
         />
       </Route>
       {/* pages */}
+      <Route path="/" element={<Home />} />
       <Route path="/get-started" element={<Login />} />
       {/* pages */}
     </Routes>

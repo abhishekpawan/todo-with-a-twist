@@ -1,20 +1,65 @@
 .btn-primary {
-  display: inline-block;
-  width: fit-content;
-  padding: 10px 10px 5px 10px;
-  color: $color-grey;
-  background-color: transparent;
-  border: none;
-  border-bottom: 2px solid $color-grey;
-  cursor: pointer;
-  text-align: center;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
-  font-weight: bold;
-  font-size: 1.6rem;
-  
-  &.active, &:hover {
-    color: $color-primary;
-    border-bottom: 2px solid $color-primary;
+  &.underline {
+    display: inline-block;
+    width: fit-content;
+    padding: 10px 10px 5px 10px;
+    color: $color-grey;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid $color-grey;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+    font-size: 1.6rem;
+
+    &.active,
+    &:hover {
+      color: $color-primary;
+      border-bottom: 2px solid $color-primary;
+    }
+  }
+
+  &.box {
+    font-size: 16px;
+    width: fit-content;
+    font-weight: 400;
+    letter-spacing: 1px;
+    padding: 13px 40px 13px;
+    outline: 0;
+    border: 1px solid $color-grey;
+    cursor: pointer;
+    position: relative;
+    background-color: transparent;
+    color: $color-white;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+
+    &::after {
+      content: "";
+      background-color: $color-primary;
+      width: 100%;
+      z-index: -1;
+      position: absolute;
+      height: 100%;
+      top: 7px;
+      left: 7px;
+      transition: 0.2s;
+    }
+
+    &:hover:after,
+    &.active,
+    &:hover {
+      font-weight: 600;
+      top: 0px;
+      left: 0px;
+    }
+  }
+
+  &[disabled] {
+    opacity: 0.4;
+    pointer-events: none;
   }
 }
