@@ -98,8 +98,8 @@ a:hover {
   font-size: 1.6rem;
 }
 .btn-primary.underline.active, .btn-primary.underline:hover {
-  color: #24A19C;
-  border-bottom: 2px solid #24A19C;
+  color: #24a19c;
+  border-bottom: 2px solid #24a19c;
 }
 .btn-primary.box {
   font-size: 16px;
@@ -119,7 +119,7 @@ a:hover {
 }
 .btn-primary.box::after {
   content: "";
-  background-color: #24A19C;
+  background-color: #24a19c;
   width: 100%;
   z-index: -1;
   position: absolute;
@@ -176,15 +176,15 @@ a:hover {
 }
 .login__form__input input:focus, .login__form__input input:hover, .login__form__input input:active {
   outline: none;
-  border-bottom: 2px solid #24A19C;
+  border-bottom: 2px solid #24a19c;
 }
 .login__form__input p {
-  color: #E72929;
+  color: #e72929;
 }
 .login__form__password-eye {
   position: absolute;
   right: 0;
-  color: #24A19C;
+  color: #24a19c;
   cursor: pointer;
   margin-top: 0.8rem;
 }
@@ -195,6 +195,33 @@ a:hover {
   .login__form {
     width: 80%;
   }
+}
+
+.error {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.error_code {
+  font-size: 100px;
+  font-style: bold;
+  font-weight: 600;
+  margin: 30px 20px 10px;
+}
+
+.error_message {
+  font-size: 50px;
+  font-style: italic;
+  color: #24a19c;
+}
+
+p {
+  font-weight: 500;
+  font-size: 80px;
+  font-style: italic;
+  color: #383838;
 }
 
 /*# sourceMappingURL=index.css.map */
