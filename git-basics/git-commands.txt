@@ -1,0 +1,4 @@
+git checkout -b new-branch-name -> to create a new branch in your local
+git pull - pull your the latest changes form server(repo) to your local system
+git add . - stage ALL changes which are present in your local -> "."(dot) represents everything 
+          -> to stage a particular file you have to give the path of that file on the place of "."
